@@ -2,10 +2,12 @@
 
 console.log(carts)
    for ( let i=0 ; i < carts.length ; i++){
-     carts[i].addEventListener('click', cartsNumber()
+     carts[i].addEventListener('click', (e) => {
+      e.preventDefault();
+      cartsNumber()
+    }
    );
    }
-
 
 function cartsNumber() {
   alert('button clicked')
